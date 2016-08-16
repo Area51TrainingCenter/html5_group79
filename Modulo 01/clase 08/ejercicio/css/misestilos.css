@@ -1,3 +1,11 @@
+*{
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+}
+
 .nav-site ul li{
 
 display: inline-block;
@@ -75,5 +83,70 @@ vertical-align: top;
 	height: 300px;
 	background-color: #fff;
 	margin: 0 auto;
-	margin-top: -100px;
+	padding-left: 32px;
+	padding-right: 32px;
+	margin-top: -80px;
+	text-align: center;
+	border-radius: 25px;
+	margin-bottom: 40px;
+}
+
+.ui-title-info{
+	font-family: arial;
+	font-size: 36px;
+	font-weight: bold;
+	display: inline-block;
+	padding: 20px 60px;
+	text-align: center;
+	border-bottom:2px solid #d5d5d5;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.ui-parrafo-info{
+	font-size: 22px;
+	line-height: 1.4;
+	font-family: arial;
+	text-align: left;
+}
+
+.linea{
+	width: 388px;
+	height: 3px;
+	background-color: #d5d5d5;
+	margin: 30px auto;
+}
+
+.detalle-item{
+	width: 330px;
+	height: 310px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.info-detalle-item{
+	display: block;
+	font-size: 24px;
+	font-family: arial;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-top: 20px;
+}
+
+.slider-info{
+	background-color: #fa6900;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.slider-info .texto-slider{
+	font-size: 22px;
+	font-family: arial;
+	line-height: 1.4;
+	color: white;
+	margin-bottom: 40px;
+	display: inline-block;
 }
