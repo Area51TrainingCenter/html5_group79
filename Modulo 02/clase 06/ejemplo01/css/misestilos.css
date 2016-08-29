@@ -1,0 +1,125 @@
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.contenedor{
+	width: 970px;
+	margin: 0 auto;
+}
+.sec-productos{
+	background-color: red;
+}
+.item-vino{
+	width: 25%;
+	height: 364px;
+	float: left;
+	background-color: blue;
+	position: relative;
+}
+.img-vino{
+	width: 100%;
+	height: 364px;
+}
+.limpiador{
+	clear: both;
+}
+
+.sobre-vino{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 15px;
+	opacity: 0;
+	transition: all 0.3s linear;
+}
+.sobre-vino:hover{
+	opacity: 1;
+}
+.border-line{
+	
+	width: 100%;
+	height: 100%;
+	border: 1px solid #e4e4e4;
+
+}
+
+.ui-title-vino{
+	font-family: 'Martel Sans', sans-serif;
+	font-size: 30px;
+	color: white;
+	
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 10px;
+}
+
+.ui-cat-vino{
+	font-family: 'Martel Sans', sans-serif;
+	font-size: 20px;
+	color: white;
+
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.ui-precio{
+	font-family: 'Martel Sans', sans-serif;
+	font-size: 20px;
+	color: white;
+
+	text-align: center;
+	display: block;
+	border-top: 1px solid #e4e4e4; 
+	border-bottom:  1px solid #e4e4e4;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.btn-read{
+	display: block;
+	margin: 30px auto;
+	width: 150px;
+	background-color: white;
+	padding: 10px 15px;
+	font-family: 'Martel Sans', sans-serif;
+	color: black;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.cat-pub
+{
+	font-size: 20px;
+	color: orange;
+	font-family: 'Martel Sans', sans-serif;
+}
+
+.title-pub{
+	color: white;
+	font-size: 35px;
+	font-family: 'Martel Sans', sans-serif;
+	padding: 10px 0px;
+}
+
+.publicidad{
+	width: 350px;
+}
+
+.info{
+	background:linear-gradient(transparent,blue);
+	-moz-background:linear-gradient(transparent,blue);
+	-webkit-background:linear-gradient(transparent,blue);
+}
+
+.box-publicidad{
+	position: relative;
+}
+.info{
+	position: absolute;
+	bottom: 0px;
+}
