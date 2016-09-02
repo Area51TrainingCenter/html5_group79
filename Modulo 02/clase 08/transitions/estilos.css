@@ -1,0 +1,93 @@
+*{
+	box-sizing: border-box;
+}
+.box-1{
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	
+	/*
+transition-property:width;
+transition-time:1s;
+transition-timing-function:linear;
+transition-delay:2s;
+*/
+
+transition:all 0.3s linear 4s;
+-webkit-transition:all 0.3s linear 4s;
+-moz-transition:all 0.3s linear 4s;
+-ms-transition:all 0.3s linear 4s;
+-o-transition:all 0.3s linear 4s;
+
+/** detalle de la version corta de porpiedad transition **/
+
+/*
+transition : propiedades afectadas tiempo de animacion tipo animacion retraso en la animación;
+*/
+}
+
+.box-1:hover{
+	width: 500px;
+	height: 300px;
+	background-color: blue;
+	border-radius: 50%;
+	opacity: 0.3;
+
+}
+
+.box-2{
+	width: 10px;
+	height: 300px;
+	background-color: red;
+	transition:all 1s ease-in;
+	
+}
+
+.box-2:hover{
+	width: 100%;
+	
+	
+}
+
+.lista-opciones li{
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px 20px;
+	background-color: orange;
+	color: white;
+	font-weight: bold;
+	transition:all 1s linear;
+	-webkit-transition:all 1s linear;
+	-moz-transition:all 1s linear;
+	-o-transition:all 1s linear;
+	cursor: pointer;
+	border-bottom: 10px solid transparent;
+}
+
+.lista-opciones li:hover{
+
+	background-color: skyblue;
+	color: black;
+	border-bottom: 10px solid red;
+
+}
+.over-personaje{
+	width: 970px;
+	height: 380px;
+	overflow: hidden;
+}
+.ui-personaje{
+	width: 7000px;
+	height: 380px;
+	
+	background-image: url(fondo2.jpg);
+
+	transition:all 20s linear;
+	-webkit-transition:all 20s linear;
+	-moz-transition:all 20s linear;
+	-o-transition:all 20s linear;
+}
+
+.over-personaje:hover .ui-personaje{
+margin-left: -3000px;
+}

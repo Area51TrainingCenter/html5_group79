@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../reset.css">
+	<link rel="stylesheet" type="text/css" href="../base.css">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<div class="container">
+		<h1 class="title-ejemplo">Ejemplo de transición</h1>
+
+<div class="ficha1"></div>
+<div class="ficha2"></div>
+
+	</div>
+</body>
+</html>
+
+<style>
+	
+.ficha1{
+  width: 100px;
+  height: 100px;
+
+  margin:10px;
+  margin-top: 0px;
+  background-color: green;
+  
+  animation: 10s carrerab infinite;
+    -webkit-animation: 10s carrerab infinite;
+}
+
+
+.ficha2{
+  width: 100px;
+  height: 100px;
+ 
+  margin:10px;
+  margin-top: 0px;
+  background-color: red;
+  
+   animation: 13s carreraa 1;
+    -webkit-animation: 13s carreraa 1;
+    
+}
+
+
+
+@keyframes carreraa{
+	  0%{ margin-left: 0px; }
+	  20%{margin-left: 400px}
+   100%{ margin-left: 500px }
+}
+@keyframes carrerab{
+	  0%{ margin-left: 0px; }
+   100%{ margin-left: 500px }
+}
+@keyframes uno{
+  0%{ margin-top: 0px; }
+   10%{ margin-top: 250px }
+    20%{ margin-top: 380px }
+     30%{ margin-top: 210px }
+      40%{ margin-top: 350px }
+  50%{ margin-top:240px; }
+   60%{ margin-top: 230px }
+    70%{ margin-top: 290px }
+     80%{ margin-top: 220px }
+      90%{ margin-top: 370px }
+     100%{ margin-top:0px; }
+}
+
+
+</style>

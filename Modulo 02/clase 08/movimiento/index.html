@@ -1,0 +1,58 @@
+<div class="caja"></div>
+<div class="caja2"></div>
+<style type="text/css">
+.caja{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	
+
+}
+
+.caja2{
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	border-radius: 50%;
+	 animation: 4s vertical infinite;
+    -webkit-animation: 4s vertical infinite;
+}
+
+/*10 segundos */
+
+@keyframes vertical{
+	0%{ margin-top:0px;} /* segundo = 0 */
+	30%{ margin-top:530px;} /* segundo = 30 */
+	50%{margin-top:100px;} /* segundo = 5 */
+	75%{margin-top:670px;} /* segundo = 5 */
+	100%{margin-top:0px;} /* segundo = 10 */
+
+}
+
+@-webkit-keyframes vertical{
+	0%{ margin-top:0px;} /* segundo = 0 */
+	30%{ margin-top:530px;} /* segundo = 30 */
+	50%{margin-top:100px;} /* segundo = 5 */
+	75%{margin-top:670px;} /* segundo = 5 */
+	100%{margin-top:0px;} /* segundo = 10 */
+
+
+}
+/*
+@-webkit-keyframes bote {
+  20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+
+  65% {
+    -webkit-transform: translateY(-15px);
+  }
+}
+
+*/
+
+</style>

@@ -1,0 +1,168 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div class="marco">
+<div class="player1"></div>
+<div class="player2"></div>
+<div class="linea"></div>
+<div class="punto"></div>
+<div class="circle"></div>
+</div>
+</body>
+</html>
+
+<style type="text/css">
+
+.circle{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -50px;
+	margin-top: -50px;
+	border:4px solid white;
+	border-radius: 50%;
+}
+.marco{
+	width: 600px;
+	height: 400px;
+	background-color: black;
+	position: relative;
+	/*transform:rotate(90deg);
+	margin-top: 150px;*/
+	}
+	.player1{
+		width: 20px;
+		height: 80px;
+		background-color: white;
+		position: absolute;
+		top: 5px;
+		left: 10px;
+		   -webkit-animation: 10s primero infinite;
+  animation: 10s primero infinite;
+	}
+
+		.player2{
+		width: 20px;
+		height: 80px;
+		background-color: white;
+		position: absolute;
+		bottom: 5px;
+		right: 10px;
+   -webkit-animation: 10s segundo infinite;
+  animation: 10s segundo infinite;
+
+	}
+	.linea{
+		width: 5px;
+		height: 400px;
+		background-color: white;
+		position: absolute;
+		top: 0px;
+		left: 295px;	
+	}
+
+	.punto{
+		width: 20px;
+		height: 20px;
+		background-color: white;
+			position: absolute;
+		top:10px;
+		left: 35px;
+   -webkit-animation: 30s punto infinite;
+  animation: 30s punto infinite;
+
+	}
+
+
+/*** movimiento */
+
+@keyframes primero {
+0%{ top: 35px;}
+25%{top: 150px;}
+50%{top: 240px;}
+75%{top: 315px;}
+90%{top: 100px;}
+
+100%{top: 35px;}
+
+}
+
+
+
+@-webkit-keyframes primero {
+0%{ top: 35px;}
+50%{top: 150px;}
+100%{top: 315px;}
+
+
+}
+
+
+@keyframes segundo {
+0%{ top: 315px;}
+20%{top: 200px;}
+40%{top: 100px;}
+50%{top: 35px;}
+85%{top: 95px;}
+90%{top: 180px;}
+100%{top: 315px;}
+
+}
+
+
+
+@-webkit-keyframes segundo {
+0%{ top: 315px;}
+20%{top: 200px;}
+40%{top: 100px;}
+50%{top: 35px;}
+85%{top: 95px;}
+90%{top: 180px;}
+100%{top: 315px;}
+
+
+}
+
+@keyframes punto{
+/*0%{transform:translate(0px,0px)}
+20%{transform:translate(520px,200px)}
+40{transform:translate(200px,0px)}
+50%{transform:translate(520px,380px)}
+70%{transform:translate(0px,40px)}
+90%{transform:translate(520px,100px)}
+100%{transform:translate(0px,0px)}
+*/
+0%{transform:translate(0px,0px)}
+10%{transform:translate(520px,200px)}
+20%{transform:translate(0px,200px)}
+30%{transform:translate(520px,50px)}
+40%{transform:translate(0px,360px)}
+50%{transform:translate(520px,360px)}
+60%{transform:translate(0px,50px)}
+70%{transform:translate(520px,10px)}
+80%{transform:translate(0px,280px)}
+90%{transform:translate(520px,300px)}
+100%{transform:translate(0px,0px)}
+}
+
+
+@-webkit-keyframes punto{
+0%{transform:translate(0px,0px)}
+10%{transform:translate(520px,200px)}
+20%{transform:translate(0px,200px)}
+30%{transform:translate(520px,50px)}
+40%{transform:translate(0px,360px)}
+50%{transform:translate(520px,360px)}
+60%{transform:translate(0px,50px)}
+70%{transform:translate(520px,10px)}
+80%{transform:translate(0px,280px)}
+90%{transform:translate(520px,300px)}
+100%{transform:translate(0px,0px)}
+}
+
+	</style>

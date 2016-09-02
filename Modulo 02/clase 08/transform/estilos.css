@@ -1,0 +1,67 @@
+.box-1{
+	width: 200px;
+	height: 200px;
+	background-color:red; 	
+		transition:all 1s linear;
+	-webkit-transition:all 1s linear;
+	-moz-transition:all 1s linear;
+	-o-transition:all 1s linear;
+
+}
+.box-1 img{ 
+width: 100%;}
+.box-1:hover{
+	/*transform: rotate(1440deg);*/
+	/*transform: rotateX(360deg);*/
+	/*transform: rotateY(360deg);*/
+}
+.box-2{
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+		transition:all 1s linear;
+	-webkit-transition:all 1s linear;
+	-moz-transition:all 1s linear;
+	-o-transition:all 1s linear;
+	/*box-shadow: 10px 10px 10px black;*/
+}
+.box-2:hover{
+	/*transform: translate(500px,500px) rotate(1440deg) scale(2.5);*/
+	/*transform: translateX(500px);*/
+	transform: translateY(100px);
+	
+	/*transform: translateZ(1000px);*/
+
+
+
+}
+.box-3{
+	width: 200px;
+	height: 200px;
+	background-color: orange;
+		transition:all 1s linear;
+	-webkit-transition:all 1s linear;
+	-moz-transition:all 1s linear;
+	-o-transition:all 1s linear;
+}
+
+.box-3:hover{
+	/*transform: scale(1.5,1.5);*/
+	/*transform: scaleX(1.5);*/
+	transform: scaleY(1.5);
+	}
+
+.box-4{
+	width: 200px;
+	height: 200px;
+	background-color: 	blue;
+		transition:all 1s linear;
+	-webkit-transition:all 1s linear;
+	-moz-transition:all 1s linear;
+	-o-transition:all 1s linear;
+
+}
+
+.box-4:hover{
+transform: skew(180deg,180deg)
+};
