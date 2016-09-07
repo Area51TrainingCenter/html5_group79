@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+</body>
+</html>
+
+<script>
+var estado;
+estado=true;
+estado=false;
+estado=1;
+estado=0;
+
+var dato=false;
+
+
+if(dato){
+	//condicion VERDADERA
+}
+else
+{
+	//condicion FALSA
+}
+
+
+//** variables de tipo fecha **/
+
+//var fecha="07/09/2016";
+
+var fecha;
+fecha =new Date();
+
+var hora=fecha.getHours();
+var minutos=fecha.getMinutes();
+var segundos=fecha.getSeconds();
+
+//var cadena= "9" + "03" + "10";
+var cadena=hora+":"+minutos+":"+segundos;
+
+var listameses=[
+		"enero",
+		"febrero",
+		"marzo",
+		"abril",
+		"Mayo",
+		"junio",
+		"julio",
+		"Agosto",
+		"Septiembre",
+		"Octubre",
+		"Noviembre",
+		"Diciembre"
+		]
+var dias=[
+	"domingo",
+	"lunes",
+	"martes",
+	"miercoles",
+	"jueves",
+	"viernes",
+	"sabado"
+]
+
+console.log("la hora es:");
+console.log(cadena);
+
+var dia=fecha.getDate();
+var mes=fecha.getMonth();
+var anio=fecha.getFullYear();
+var cadena2=dia+"/"+listameses[mes]+"/"+anio;
+console.log("la fecha actual es:");
+console.log(cadena2);
+
+var indicedia=fecha.getDay();
+console.log("el dia de la semana es : " + dias[indicedia]);
+/*
+documentacion del objeto de tipo date */
+
+/*
+http://www.w3schools.com/jsref/jsref_obj_date.asp
+*/
+
+
+/* 
+console.log(hora);
+console.log(minutos);
+console.log(segundos);
+*/
+</script>

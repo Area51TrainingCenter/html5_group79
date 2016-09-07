@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+	<h1>Bienvenido a modulo de JS</h1>
+
+
+	</body>
+</html>
+
+<style>
+	.parra{color:black;}
+</style>
+
+<script>
+var usuario;
+var password;
+
+usuario=prompt("ingresa tu usuario");
+password=prompt("ingresa tu contraseña");
+
+console.log(usuario);
+console.log(password);
+
+/*se mostara un mensaje de bienvida si los datos son 
+usaurio = admin  
+contraeña = 1234
+*/
+
+if(usuario=="admin")
+{
+	//condicion verdadero
+	//console.log("bienvenido Admin");
+	if(password=="1234")
+	{
+		console.log("bienvenido Usuario");
+
+	}
+	else{
+	console.log("Tu no eres el Admi");		
+	}
+
+}
+else
+{
+	console.log("Tu no eres el Admin");
+	//condicion falso
+}
+
+/*
+usuario="admin";
+password="123"
+
+//operadores en if
+// && se deben de cumplir las 2 condiciones
+// || se debe cumplir almenos una condicion
+if(usuario=="admin" && password="1234"){
+
+}
+else{
+
+}
+*/
+/*
+
+if(usario=="admin")
+{
+	ejecuta estas lineas de codigo 
+	SÍ la condición se cumple
+
+	console.log("aqui va el texto")
+}
+else
+{
+	ejecuta estas lineas de codigo 
+	NO la condición se cumple
+}
+*/
+
+
+
+
+</script>
