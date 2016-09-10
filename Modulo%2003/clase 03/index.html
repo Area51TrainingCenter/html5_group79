@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body >
+<div id ="principal" class="container">
+
+	<h1 id="titulo" class="elem">Bienvenido a JS</h1>
+
+	<span id="opc1" class="elem">
+		Opcion 1
+	</span>
+
+	<span id="opc2">
+		Opcion 2
+	</span>
+
+
+</div>
+
+</body>
+</html>
+<style>
+	.container{
+		width: 970px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	span{
+		display: inline-block;
+		vertical-align: top;
+		padding: 10px;
+		background-color: black;
+		font-family: arial;
+		font-size: 20px;
+		color: #fff;
+	}
+
+	.rojo{
+		background-color: red;
+	}
+
+	.verde{
+		background-color: green;
+	}
+</style>
+
+<script>
+	var titulo;
+	titulo=document.getElementById('titulo');
+ 
+ var contenedor=document.getElementById("principal");
+
+	titulo.addEventListener("click",mensaje);
+
+	function mensaje()
+	{
+		alert("hizo Click en el titulo del documento");
+	}
+
+	var elemento1=document.getElementById("opc1");
+	elemento1.addEventListener("click",tarea1)
+
+	function tarea1()
+	{
+		//alert("hizo click en la opcion1")
+		contenedor.classList.remove("verde");
+	contenedor.classList.add("rojo");
+	titulo.innerHTML="El fondo es de color Rojo";
+	}
+
+
+	var elemento2=document.getElementById("opc2");
+	elemento2.addEventListener("click",tarea2)
+
+	function tarea2()
+	{
+		contenedor.classList.remove("rojo");
+		contenedor.classList.add("verde");
+		titulo.innerHTML="El fondo es de color Verde";
+	}
+
+
+
+
+</script>

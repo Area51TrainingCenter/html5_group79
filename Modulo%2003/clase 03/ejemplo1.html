@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body >
+<div id ="principal" class="container">
+	<div class="over-opciones">
+		<span id="opciones" class="opciones">Paises</span>
+			<ul id="lista">
+				<li>PEN</li>	
+				<li>USA</li>
+				<li>EUR</li>
+
+			</ul>
+	</div>
+
+</div>
+
+</body>
+</html>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+}
+.over-opciones{
+	background-color: orange;
+	width: 120px;
+	position: relative;
+}
+.opciones{
+	font-family: arial;
+	font-size: 15px;
+	text-decoration: underline;
+	cursor: pointer;
+	padding: 20px;
+	display: inline-block;
+	background-color: rgba(155,133,34,0.6)
+}
+ul{
+	width: 100px;
+	background-color: red;
+	position: absolute;
+	top: 60px;
+	display: none;
+}
+
+
+.mostrar{
+	display: block;
+}
+
+li{
+	list-style-type: none;
+	padding: 10px;
+	background-color: red;
+	color: white;
+}
+	.container{
+		width: 970px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+</style>
+
+<script>
+var opciones=document.getElementById('opciones');
+opciones.addEventListener("click",mostrarLista);
+
+var lista=document.getElementById("lista");
+
+function mostrarLista(){
+lista.classList.add("mostrar");
+
+}
+</script>

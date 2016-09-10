@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script src="jquery-3.1.0.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div>
+			<img id="img-principal" src="item1.jpg" alt="">
+		</div>
+
+		<ul class="thumb">
+			<li id="item-1" class="activo">
+				<img src="item1.jpg" class="item">
+			</li>
+			<li id="item-2">
+				<img src="item2.jpg" class="item">
+			</li>
+			<li id="item-3">
+				<img src="item3.jpg" class="item">
+			</li>
+			<li id="item-4">
+				<img src="item4.jpg" class="item">
+			</li>
+
+		</ul>
+	</div>
+</body>
+</html>
+
+<style>
+	*{margin:0;padding:0;}
+	.container{
+		width: 970px;
+		margin: 0 auto;
+	}
+	.thumb{
+		text-align: center;
+		
+	}
+	.thumb li {
+		width: 220px;
+		display: inline-block;
+		vertical-align: top;
+		opacity: 0.5;
+		transition: all 0.3s linear;
+	}
+	.thumb li img{
+		width: 100%;
+	}
+
+	.thumb li.activo{
+		opacity: 1;
+	}
+</style>
+
+<script type="text/javascript">
+	
+	//$(".thumb li").click(tarea1);
+
+
+
+
+
+	$("#item-1").mouseenter(tarea1);	
+	function tarea1(){
+		/* el attr en este momento , obtiene el valor del atributo
+		$("#img-principal").attr("src");
+		*/
+		/* en este caso actualiza el valor */
+		$(".thumb li").removeClass("activo");
+			$("#item-1").addClass("activo");
+		$("#img-principal").attr("src","item1.jpg");
+	}
+
+	$("#item-2").mouseenter(function (){
+		$(".thumb li").removeClass("activo");
+		$("#item-2").addClass("activo");
+		$("#img-principal").attr("src","item2.jpg");
+	});	
+
+
+
+	$("#item-3").mouseenter(function (){
+		$(".thumb li").removeClass("activo");
+		$("#item-3").addClass("activo");
+		$("#img-principal").attr("src","item3.jpg");
+	}	);
+
+	
+
+	$("#item-4").mouseenter(function (){
+		$(".thumb li").removeClass("activo");
+		$("#item-4").addClass("activo");
+		$("#img-principal").attr("src","item4.jpg");
+	});
+
+	
+
+
+	$(".elemento").click(function (){
+
+		//codigo a ejecutar
+
+	})
+
+
+
+</script>
