@@ -37,3 +37,38 @@ background-color: black;
 	display: block;
 	}	
 }
+
+.productos ul{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.productos ul li{
+	display: inline-block;
+	vertical-align: top;
+	font-family: arial;
+	font-size: 17px;
+	background-color: skyblue;
+	padding: 15px 25px;
+}
+.productos article{
+	width: 33.3%;
+	float: left;
+	text-align: center;
+	padding-top: 30px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.productos article img{
+	width: 40%;
+
+}
+
+
+.productos article h3{
+	font-family: arial;
+	margin-top: 10px;
+	font-size: 20px;
+	text-align: left;	
+}
